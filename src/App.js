@@ -1,11 +1,8 @@
-
 import Hero from "./components/Hero/Hero";
 
 function App() {
   return (
     <>
-      <div>Finance ledger</div>
-        <div>Header menu</div>
     <Hero />
 
 

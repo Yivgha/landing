@@ -5,13 +5,13 @@ import bg from "../../assets/images/home/showcase.jpg";
 export const HeroBox = styled.div`
 display: flex;
 flex-direction: column;
-padding: 160px 40px 105px 40px;
-width: 320px;
-height: 100%;
+padding: 160px auto 105px auto;
 background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bg});
-background-size: cover;
-background-repeat: no-repeat;
-background-position: top center;
+background-position: 'top center',
+background-size: 'cover';
+backgroundrepeat: 'no-repeat';
+width: 320px;
+height: 533px;
 border-radius: 0px;
 `;
 
