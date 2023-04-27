@@ -1,9 +1,15 @@
 import { LayoutBox } from "./layout.styled";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
-const Layout = ({ children }) => {
+const Layout = ({children}) => {
     return (
         <LayoutBox>
-            {children}
+         
+        <Header />
+        <main>{children}</main>
+        <Footer />
+  
         </LayoutBox>
     );
 };
