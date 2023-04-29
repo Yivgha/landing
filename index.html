@@ -29,11 +29,11 @@
                         <p class="logo-white">Ledger</p>
                     </a>
                     <ul class="header-nav__list">
-                        <li class="header-nav__item">Home</li>
-                        <li class="header-nav__item">About</li>
-                        <li class="header-nav__item">Cases</li>
-                        <li class="header-nav__item">Blog</li>
-                        <li class="header-nav__item">Contact</li>
+                        <li class="header-nav__item"><a href="#hero" clas="header-nav__link">Home</a></li>
+                        <li class="header-nav__item"><a href="#about" clas="header-nav__link">About</a></li>
+                        <li class="header-nav__item"><a href="#cases" clas="header-nav__link">Cases</a></li>
+                        <li class="header-nav__item"><a href="#blog" clas="header-nav__link">Blog</a></li>
+                        <li class="header-nav__item"><a href="#contact" clas="header-nav__link">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -42,22 +42,33 @@
 
     <main>
         <section id="hero">
-            <div class="container">
-                <h1>The Sky Is The Limit</h1>
-                <p>We provide world class financial assistance</p>
-                <button>ICON Read More</button>
+            <div class="container hero__container">
+                <h1 class="hero__title">The Sky Is The Limit</h1>
+                <p class="hero__subtitle">We provide world class financial assistance</p>
+                <button type="button" class="hero__btn">
+                    <img src="./src/assets/images/gallery/nextVector.png" alt="next arrow" class="hero-btn__img" />
+                    <p class="hero-btn__text">Read More</p>
+                </button>
             </div>
         </section>
         <section id="about">
-            <div class="container">
-                <div>IMG</div>
-                <p>What you are looking for</p>
-                <h2>We provide bespoke solutions</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos quae
-                    laudantium asperiores nam
-                    aliquid impedit harum illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste
-                    maiores deleniti?</p>
-                <button>Read more</button>
+            <!-- <div class="about__img"> -->
+            <img class="about__img" src="./src/assets/images/home/people.jpg" alt="people of our company" width="320px"
+                height="220px" />
+            <!-- </div> -->
+            <div class="about__container">
+                <div class="container">
+                    <p class="about__description">What you are looking for</p>
+                    <h2 class="about__title">We provide bespoke solutions</h2>
+                    <p class="about__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum
+                        dignissimos quae
+                        laudantium asperiores nam
+                        aliquid impedit harum illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste
+                        maiores deleniti?</p>
+                    <button class="about__btn" type="button">
+                        <p class="about-btn__text">Read more</p>
+                    </button>
+                </div>
             </div>
         </section>
         <section id="cases">

@@ -19,8 +19,19 @@
      @include font(16px, 1.37em, 400);
     margin-right: 12px;
    color: var(--white-text-color);
+   text-decoration: none;
 
     &:last-child {
         margin-right: 0;
     }
+
+    &:hover,
+  &:focus, &:visited {
+    color: var(--white-text-color);
+  }
+}
+
+.header-nav__link{
+    text-decoration: none;
+    color: var(--white-text-color);
 }
