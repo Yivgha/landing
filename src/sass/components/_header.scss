@@ -1,0 +1,26 @@
+.header__container{
+    background-color: var(--hero-bg-mask-color);
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-nav__list{
+    display: flex;
+    text-decoration: none;
+}
+
+.header-nav__item{
+     @include font(16px, 1.37em, 400);
+    margin-right: 12px;
+   color: var(--white-text-color);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
