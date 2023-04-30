@@ -78,7 +78,15 @@
         </section>
         <section id="about" class="about__wrapper">
             <div class="about-img__box">
-                <img class="about__img" src="./src/assets/images/home/people.webp" alt="people of our company" />
+                <picture>
+                    <source type="image/webp" srcset="
+                      ./src/assets/images/home/people.webp 100w,
+                     ./src/assets/images/home/people@2x.webp 200w">
+                    <img class="about__img" srcset="
+                      ./src/assets/images/home/people.jpg 100w,
+                      ./src/assets/images/home/people@2x.jpg 200w" src="./src/assets/images/home/people.webp"
+                        alt="people of our company" loading="lazy" decoding="async">
+                </picture>
             </div>
             <div class="about__container">
                 <div class="container">
@@ -103,33 +111,69 @@
                     <p class="cases__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
                         sapiente!</p>
                     <div id="lightgallery" class="cases__gallery">
-                        <a class="cases__item" href="./src/assets/images/cases/cases1.jpg">
-                            <img alt="people around the table" src="./src/assets/images/cases/cases1.jpg"
-                                class="cases__img" />
+                        <a class="cases__item" href="./src/assets/images/cases/cases1.webp">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset=" ./src/assets/images/cases/cases1.webp 100w,  ./src/assets/images/cases/cases1@2x.webp 200w">
+                                <img class="cases__img"
+                                    srcset="  ./src/assets/images/cases/cases1.jpg 100w, ./src/assets/images/cases/cases1@2x.jpg 200w"
+                                    src="./src/assets/images/cases/cases1.webp" alt="people around the table"
+                                    loading="lazy" decoding="async">
+                            </picture>
                         </a>
 
-                        <a class="cases__item" href="./src/assets/images/cases/cases3.jpg">
-                            <img alt="graphics in notebook and hand with pen" src="./src/assets/images/cases/cases3.jpg"
-                                class="cases__img" />
+                        <a class="cases__item" href="./src/assets/images/cases/cases3.webp">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="  ./src/assets/images/cases/cases3.webp 100w, ./src/assets/images/cases/cases3@2x.webp 200w">
+                                <img class="cases__img"
+                                    srcset="./src/assets/images/cases/cases3.jpg 100w,./src/assets/images/cases/cases3@2x.jpg 200w"
+                                    src="./src/assets/images/cases/cases3.webp"
+                                    alt="graphics in notebook and hand with pen" loading="lazy" decoding="async">
+                            </picture>
                         </a>
 
-                        <a class="cases__item" href="./src/assets/images/cases/cases5.jpg">
-                            <img alt="man shaking hands with a woman" src="./src/assets/images/cases/cases5.jpg"
-                                class="cases__img" />
+                        <a class="cases__item" href="./src/assets/images/cases/cases5.webp">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset=" ./src/assets/images/cases/cases5.webp 100w, ./src/assets/images/cases/cases5@2x.webp 200w">
+                                <img class="cases__img"
+                                    srcset="/src/assets/images/cases/cases5.jpg 100w, ./src/assets/images/cases/cases5@2x.jpg 200w"
+                                    src="./src/assets/images/cases/cases5.webp" alt="man shaking hands with a woman"
+                                    loading="lazy" decoding="async">
+                            </picture>
                         </a>
 
-                        <a class="cases__item" href="./src/assets/images/cases/cases7.jpg">
-                            <img alt="people shaking hands above the table" src="./src/assets/images/cases/cases7.jpg"
-                                class="cases__img" />
+                        <a class="cases__item" href="./src/assets/images/cases/cases7.webp">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="./src/assets/images/cases/cases7.webp 100w, ./src/assets/images/cases/cases7@2x.webp 200w">
+                                <img class="cases__img"
+                                    srcset=" ./src/assets/images/cases/cases7.jpg 100w, ./src/assets/images/cases/cases7@2x.jpg 200w"
+                                    src="./src/assets/images/cases/cases7.webp"
+                                    alt="people shaking hands above the table" loading="lazy" decoding="async">
+                            </picture>
                         </a>
 
-                        <a class="cases__item" href="./src/assets/images/cases/cases2.jpg">
-                            <img alt="womans hands on the laptop" src="./src/assets/images/cases/cases2.jpg"
-                                class="cases__img" />
+                        <a class="cases__item" href="./src/assets/images/cases/cases2.webp">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset=" ./src/assets/images/cases/cases2.webp 100w, ./src/assets/images/cases/cases2@2x.webp 200w">
+                                <img class="cases__img"
+                                    srcset=" ./src/assets/images/cases/cases2.jpg 100w, ./src/assets/images/cases/cases2@2x.jpg 200w"
+                                    src="./src/assets/images/cases/cases2.webp" alt="womans hands on the laptop"
+                                    loading="lazy" decoding="async">
+                            </picture>
                         </a>
-                        <a class="cases__item" href="./src/assets/images/cases/cases4.jpg">
-                            <img alt="office buildings and the sky" src="./src/assets/images/cases/cases4.jpg"
-                                class="cases__img" />
+                        <a class="cases__item" href="./src/assets/images/cases/cases4.webp">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset=" ./src/assets/images/cases/cases4.webp 100w, ./src/assets/images/cases/cases4@2x.webp 200w">
+                                <img class="cases__img"
+                                    srcset=" ./src/assets/images/cases/cases4.jpg 100w, ./src/assets/images/cases/cases4@2x.jpg 200w"
+                                    src="./src/assets/images/cases/cases4.webp" alt="office buildings and the sky"
+                                    loading="lazy" decoding="async">
+                            </picture>
                         </a>
                     </div>
                 </div>
@@ -137,7 +181,14 @@
         </section>
         <section id="blog" class="blog__wrapper">
             <div class="blog-img__box">
-                <img src="./src/assets/images/home/blog.webp" alt="cut of coffee between notebooks" class="blog__img" />
+                <picture>
+                    <source type="image/webp"
+                        srcset=" ./src/assets/images/home/blog.webp 100w, ./src/assets/images/home/blog@2x.webp 200w">
+                    <img class="blog__img"
+                        srcset=" ./src/assets/images/home/blog..jpg 100w, ./src/assets/images/home/blog@2x.jpg 200w"
+                        src="./src/assets/images/home/blog.webp" alt="cup of coffee between notebooks" loading="lazy"
+                        decoding="async">
+                </picture>
             </div>
             <div class="blog__container">
                 <div class="container">
@@ -170,11 +221,11 @@
                             <a href="" class="team-member__link">
                                 <div class="team-member__box">
                                     <picture>
-                                        <source
-                                            srcset="./src/assets/images/team/person1.webp 1x, ./src/assets/images/team/person1@2x.webp 2x"
+                                        <source type="image/webp"
+                                            srcset="./src/assets/images/team/person1.webp 100w, ./src/assets/images/team/person1@2x.webp 200w"
                                             media="(min-width: 1200px)" />
                                         <source
-                                            srcset="./src/assets/images/team/person1.jpg 1x, ./src/assets/images/team/person1@2x.jpg 2x"
+                                            srcset="./src/assets/images/team/person1.jpg 100w, ./src/assets/images/team/person1@2x.jpg 200w"
                                             media="(min-width: 320px)" />
                                         <img class="team-member__img" src="./src/assets/images/team/person1.webp"
                                             alt="John Doe">
@@ -217,10 +268,10 @@
                                 <div class="team-member__box">
                                     <picture>
                                         <source
-                                            srcset="./src/assets/images/team/person2.webp 1x, ./src/assets/images/team/person2@2x.webp 2x"
+                                            srcset="./src/assets/images/team/person2.webp 100w, ./src/assets/images/team/person2@2x.webp 200w"
                                             media="(min-width: 1200px)" />
                                         <source
-                                            srcset="./src/assets/images/team/person2.jpg 1x, ./src/assets/images/team/person2@2x.jpg 2x"
+                                            srcset="./src/assets/images/team/person2.jpg 100w, ./src/assets/images/team/person2@2x.jpg 200w"
                                             media="(min-width: 320px)" />
                                         <img class="team-member__img" src="./src/assets/images/team/person2.webp"
                                             alt="Jane Doe">
@@ -265,10 +316,10 @@
                                 <div class="team-member__box">
                                     <picture>
                                         <source
-                                            srcset="./src/assets/images/team/person3.webp 1x, ./src/assets/images/team/person3@2x.webp 2x"
+                                            srcset="./src/assets/images/team/person3.webp 100w, ./src/assets/images/team/person3@2x.webp 200w"
                                             media="(min-width: 1200px)" />
                                         <source
-                                            srcset="./src/assets/images/team/person3.jpg 1x, ./src/assets/images/team/person3@2x.jpg 2x"
+                                            srcset="./src/assets/images/team/person3.jpg 100w, ./src/assets/images/team/person3@2x.jpg 200w"
                                             media="(min-width: 320px)" />
                                         <img class="team-member__img" src="./src/assets/images/team/person3.webp"
                                             alt="Steve Smith">
@@ -315,7 +366,15 @@
 
         <section id="contact" class="contact__wrapper">
             <div class="contact-img__box">
-                <img src="./src/assets/images/home/contact.jpg" alt="man looking in laptop" class="contact__img" />
+                <picture>
+                    <source
+                        srcset="./src/assets/images/home/contact.webp 100w, ./src/assets/images/home/contact@2x.webp 200w"
+                        media="(min-width: 1200px)" />
+                    <source
+                        srcset="./src/assets/images/home/contact.jpg 100w, ./src/assets/images/home/contact@2x.jpg 200w"
+                        media="(min-width: 320px)" />
+                    <img class="contact__img" src="./src/assets/images/home/contact.webp" alt="man looking in laptop">
+                </picture>
             </div>
             <div class="contact-form__box">
                 <div class="container">
