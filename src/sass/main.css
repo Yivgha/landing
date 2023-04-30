@@ -66,17 +66,19 @@ html {
   min-width: 320px;
   margin: 0;
 }
+
 @media screen and (min-width: 768px) {
-  .container .container {
+  .container {
     width: 768px;
+    padding: 0 32px;
   }
 }
 @media screen and (min-width: 1360px) {
-  .container .container {
+  .container {
     width: 1360px;
+    padding: 0 28px;
   }
 }
-
 .header__container {
   top: 0;
   position: fixed;
@@ -101,9 +103,26 @@ html {
 .header-nav__item {
   padding: 0;
   margin-right: 12px;
+  display: block;
+  border-bottom: 3px solid transparent;
+  position: relative;
 }
 .header-nav__item:last-child {
   margin-right: 0;
+}
+.header-nav__item:hover::after {
+  width: 100%;
+}
+
+.header-nav__item::after {
+  content: "";
+  height: 5px;
+  width: 0%;
+  background: var(--green-btn-color);
+  border-radius: 5px;
+  position: absolute;
+  opacity: 0.8;
+  bottom: 0;
 }
 
 .header-nav__link {
@@ -122,23 +141,18 @@ html {
   color: var(--white-text-color);
   text-decoration: none;
 }
-.header-nav-link__text:hover, .header-nav-link__text:focus {
-  -webkit-text-decoration: underline var(--white-text-color);
-          text-decoration: underline var(--white-text-color);
-}
 
 .logo {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: baseline;
   height: 38px;
 }
 .logo:hover, .logo:focus {
-  -webkit-text-decoration: underline var(--white-text-color);
-          text-decoration: underline var(--white-text-color);
+  transform: scale(1);
 }
 .logo:hover .logo__img, .logo:focus .logo__img {
-  transform: scale(1);
   fill: var(--light-green-btn-color);
 }
 
@@ -146,7 +160,6 @@ html {
   width: 40px;
   height: 35px;
   margin-right: 8px;
-  transform: scale(0.8);
   fill: var(--green-text-color);
 }
 

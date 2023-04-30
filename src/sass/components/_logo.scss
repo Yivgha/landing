@@ -2,14 +2,21 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: baseline;
     height: 38px;
+    // transform: scale(0.95);
+
     &:hover, &:focus{
-    text-decoration: underline var(--white-text-color);
+    transform: scale(1);
 
     .logo__img{
-       transform: scale(1);
-        fill: var(--light-green-btn-color) 
+        fill: var(--light-green-btn-color);
+       
     }
+
+//     .logo-green{
+// color: var(--light-green-btn-color);
+//     }
    }
 }
 
@@ -17,7 +24,6 @@
     width: 40px;
     height: 35px;
     margin-right: 8px;
-    transform: scale(0.8);
    fill: var(--green-text-color);
 }
 
