@@ -322,10 +322,12 @@
                 <div class="container">
                     <h2 class="contact-form__title">Request Callback</h2>
                     <div>
-                        <form action="#" class="contact__form">
-                            <input type="text" placeholder="Enter your name" class="contact-form__input" />
+                        <form action="" name="contact-form" class="contact__form" netlify netlify-honeypot="bot-field">
+                            <input type="text" placeholder="Enter your name" name="name" class="contact-form__input" />
                             <input placeholder="Enter email*" class="contact-form__input" required aria-label="required"
-                                type="email" id="mail" name="mail" autocomplete="off" />
+                                type="email" id="mail" name="email" autocomplete="off"
+                                title="This is a required field" />
+                            <p id="warning" class="contacts__warning"></p>
                             <button type="button" class="contact-form__btn">
                                 <p class="contact-form-btn__text">Send</p>
                             </button>
@@ -394,13 +396,10 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/zoom/lg-zoom.min.js"></script>
 
+    <script type="module" src="./src/js/app.js"></script>
 
-    <script>lightGallery(document.getElementById('lightgallery'), {
-            plugins: [lgThumbnail, lgShare, lgRotate],
-            download: true,
-        })</script>
     <!-- <script src="dist/notiflix-notify-aio-X.X.X.min.js"></script> -->
-    <script src="./src//js/validation.js"></script>
+    <script src="./src/js/validation.js"></script>
 
 </body>
 

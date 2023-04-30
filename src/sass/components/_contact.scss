@@ -45,6 +45,10 @@ border-radius: 5px;
 .contact-form__input:focus:invalid{
 background: url("../../src/assets/images/form/worning.svg") no-repeat 95% 50% var( --warning-color);
 background-size: 28px;
+
+.contacts__warning{
+    display: block;
+}
 }
 
 .contact-form__btn{
@@ -66,4 +70,8 @@ display: flex;
 .contact-form-btn__text{
     @include font (18px, 1.38, 400);
     color: var(--white-text-color);
+}
+
+.contacts__warning{
+    display: none;
 }

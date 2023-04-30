@@ -594,6 +594,9 @@ html {
   background: url("../../src/assets/images/form/worning.svg") no-repeat 95% 50% var(--warning-color);
   background-size: 28px;
 }
+.contact-form__input:focus:invalid .contacts__warning {
+  display: block;
+}
 
 .contact-form__btn {
   background-color: var(--green-btn-color);
@@ -615,6 +618,10 @@ html {
   line-height: 1.38;
   font-weight: 400;
   color: var(--white-text-color);
+}
+
+.contacts__warning {
+  display: none;
 }
 
 .footer__container {
