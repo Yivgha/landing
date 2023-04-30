@@ -15,6 +15,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
         integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-rotate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-share.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-thumbnail.min.css">
+
     <link rel="stylesheet" href="./src/sass/main.css">
 </head>
 
@@ -73,10 +79,62 @@
         </section>
         <section id="cases">
             <div class="container">
-                <p>This is what we do</p>
-                <h2>Business Cases</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
-                <div> IMG GRID LIB</div>
+                <div class="cases__container">
+                    <p class="cases__description">This is what we do</p>
+                    <h2 class="cases__title">Business Cases</h2>
+                    <p class="cases__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+                        sapiente!</p>
+                    <div id="lightgallery" class="cases__gallery">
+                        <a class="cases__item" href="./src/assets/images/cases/cases1.jpg">
+                            <img alt="people around the table" src="./src/assets/images/cases/cases1.jpg"
+                                class="cases__img" />
+                        </a>
+
+                        <a class="cases__item" href="./src/assets/images/cases/cases3.jpg">
+                            <img alt="graphics in notebook and hand with pen" src="./src/assets/images/cases/cases3.jpg"
+                                class="cases__img" />
+                        </a>
+
+                        <a class="cases__item" href="./src/assets/images/cases/cases5.jpg">
+                            <img alt="man shaking hands with a woman" src="./src/assets/images/cases/cases5.jpg"
+                                class="cases__img" />
+                        </a>
+
+                        <a class="cases__item" href="./src/assets/images/cases/cases7.jpg">
+                            <img alt="people shaking hands above the table" src="./src/assets/images/cases/cases7.jpg"
+                                class="cases__img" />
+                        </a>
+
+                        <a class="cases__item" href="./src/assets/images/cases/cases2.jpg">
+                            <img alt="womans hands on the laptop" src="./src/assets/images/cases/cases2.jpg"
+                                class="cases__img" />
+                        </a>
+                        <a class="cases__item" href="./src/assets/images/cases/cases4.jpg">
+                            <img alt="office buildings and the sky" src="./src/assets/images/cases/cases4.jpg"
+                                class="cases__img" />
+                        </a>
+
+
+
+
+
+
+                        <!-- <a href="https://picsum.photos/id/1018/1000/600" data-lg-size="1000-600"
+                            data-lg-thumbnail="https://picsum.photos/id/1018/250/150">
+                            <img src="https://picsum.photos/id/1018/250/150">
+                        </a>
+                        <a href="https://picsum.photos/id/102/1000/600" data-lg-size="1000-600"
+                            data-lg-thumbnail="https://picsum.photos/id/102/250/150">
+                            <img src="https://picsum.photos/id/102/250/150">
+                        </a>
+                        <a href="https://picsum.photos/id/1005/1000/600" data-lg-size="1000-600"
+                            data-lg-thumbnail="https://picsum.photos/id/1005/250/150">
+                            <img src="https://picsum.photos/id/1005/250/150">
+                        </a> -->
+                    </div>
+
+
+                </div>
             </div>
         </section>
         <section id="blog">
@@ -158,6 +216,25 @@
             <p>Copyright © 2021 - FinanceLedger</p>
         </div>
     </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/autoplay/lg-autoplay.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/rotate/lg-rotate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/share/lg-share.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+
+
+    <script>lightGallery(document.getElementById('lightgallery'), {
+            plugins: [lgThumbnail, lgShare, lgRotate],
+            // thumbWidth: "100px",
+            // thumbHeight: "100px",
+            download: true,
+        })</script>
+
 </body>
 
 </html>

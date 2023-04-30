@@ -1,0 +1,41 @@
+.cases__container{
+    padding: 56px 0 40px 0;
+    text-align: center;
+    justify-content: center;
+}
+.cases__description {
+    @include font (16px, 1.37, 400);
+    color: var(--black-text-color);
+    margin-bottom: 16px;
+}
+
+.cases__title {
+    @include font (32px, 1.37, 400);
+    color: var(--black-text-color);
+    margin-bottom: 24px;
+}
+
+.cases__text{
+    @include font (16px, 1.37, 400);
+    color: var(--black-text-color);
+    margin-bottom: 31px;
+}
+
+.cases__gallery{
+    display: flex;
+    flex-direction: column;
+}
+
+.cases__item{
+    margin-bottom: 8px;
+    text-decoration: none;
+    list-style: none;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.cases__img{
+    width: 280px;
+    height: 176px;
+}
