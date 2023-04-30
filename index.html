@@ -48,13 +48,18 @@
 
     <main>
         <section id="hero">
-            <div class="container hero__container">
-                <h1 class="hero__title">The Sky Is The Limit</h1>
-                <p class="hero__subtitle">We provide world class financial assistance</p>
-                <button type="button" class="hero__btn">
-                    <img src="./src/assets/images/gallery/nextVector.png" alt="next arrow" class="hero-btn__img" />
-                    <p class="hero-btn__text">Read More</p>
-                </button>
+            <div class="hero__container">
+                <div class="container">
+                    <div class="hero__wrapper">
+                        <h1 class="hero__title">The Sky Is The Limit</h1>
+                        <p class="hero__subtitle">We provide world class financial assistance</p>
+                        <button type="button" class="hero__btn">
+                            <img src="./src/assets/images/gallery/nextVector.png" alt="next arrow"
+                                class="hero-btn__img" />
+                            <p class="hero-btn__text">Read More</p>
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="about">
@@ -290,8 +295,6 @@
 
     <script>lightGallery(document.getElementById('lightgallery'), {
             plugins: [lgThumbnail, lgShare, lgRotate],
-            // thumbWidth: "100px",
-            // thumbHeight: "100px",
             download: true,
         })</script>
 
