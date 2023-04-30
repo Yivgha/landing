@@ -339,4 +339,77 @@ html {
   line-height: 1.37;
   font-weight: 400;
   color: var(--white-text-color);
+}
+
+.team__top {
+  padding-top: 72px;
+  text-align: center;
+}
+
+.team__bottom {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.team__description {
+  font-size: 16px;
+  line-height: 1.37;
+  font-weight: 400;
+  color: var(--black-text-color);
+  margin-bottom: 16px;
+}
+
+.team__title {
+  font-size: 32px;
+  line-height: 1.37;
+  font-weight: 400;
+  color: var(--black-text-color);
+  margin-bottom: 24px;
+}
+
+.team__text {
+  font-size: 16px;
+  line-height: 1.37;
+  font-weight: 400;
+  color: var(--black-text-color);
+  margin-bottom: 63px;
+}
+
+.team__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.team__item {
+  margin-bottom: 30px;
+}
+.team__item:last-child {
+  margin-bottom: 0;
+}
+
+.team-member__img {
+  width: 280px;
+  height: 186px;
+}
+
+.team-member__title {
+  font-size: 27px;
+  line-height: 1.35;
+  font-weight: 400;
+  color: var(--black-text-color);
+  margin-top: 16px;
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+.team-member__text {
+  font-size: 16px;
+  line-height: 1.37;
+  font-weight: 400;
+  color: var(--black-text-color);
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=main.css.map */
