@@ -3,7 +3,9 @@
     flex-direction: row;
     align-items: center;
     height: 38px;
-    margin-bottom: 16px;
+    &:hover, &:focus{
+    text-decoration: underline var(--white-text-color);
+   }
 }
 
 .logo__img{

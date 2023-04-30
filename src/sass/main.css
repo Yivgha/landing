@@ -42,6 +42,20 @@ html {
   overflow-x: hidden;
 }
 
+.visually__hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
 .container {
   padding: 0 20px;
   width: 100%;
@@ -60,8 +74,11 @@ html {
 }
 
 .header__container {
-  background-color: var(--hero-bg-mask-color);
+  top: 0;
+  position: fixed;
+  background-color: transparent;
   height: 120px;
+  width: 100%;
   display: flex;
   align-items: center;
 }
@@ -77,18 +94,11 @@ html {
 }
 
 .header-nav__item {
-  font-size: 16px;
-  line-height: 1.37em;
-  font-weight: 400;
+  padding: 0;
   margin-right: 12px;
-  color: var(--white-text-color);
-  text-decoration: none;
 }
 .header-nav__item:last-child {
   margin-right: 0;
-}
-.header-nav__item:hover, .header-nav__item:focus, .header-nav__item:visited {
-  color: var(--white-text-color);
 }
 
 .header-nav__link {
@@ -96,12 +106,31 @@ html {
   color: var(--white-text-color);
 }
 
+.sticky {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.header-nav-link__text {
+  font-size: 16px;
+  line-height: 1.37em;
+  font-weight: 400;
+  color: var(--white-text-color);
+  text-decoration: none;
+}
+.header-nav-link__text:hover, .header-nav-link__text:focus {
+  -webkit-text-decoration: underline var(--white-text-color);
+          text-decoration: underline var(--white-text-color);
+}
+
 .logo {
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 38px;
-  margin-bottom: 16px;
+}
+.logo:hover, .logo:focus {
+  -webkit-text-decoration: underline var(--white-text-color);
+          text-decoration: underline var(--white-text-color);
 }
 
 .logo__img {
@@ -127,7 +156,7 @@ html {
 
 .hero__container {
   background-color: var(--hero-bg-mask-color);
-  background-image: url("../../src/assets/images/home/showcase.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../src/assets/images/home/showcase.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -516,7 +545,10 @@ html {
 .footer-social__icon {
   width: 35px;
   height: 35px;
-  color: var(--white-text-color);
+  fill: var(--white-text-color);
+}
+.footer-social__icon:hover, .footer-social__icon:focus {
+  fill: var(--green-btn-color);
 }
 
 .footer__copyright {
@@ -526,4 +558,8 @@ html {
   text-align: center;
   margin: 0;
   padding: 0;
+}
+.footer__copyright:hover, .footer__copyright:focus {
+  -webkit-text-decoration: underline var(--green-btn-color);
+          text-decoration: underline var(--green-btn-color);
 }/*# sourceMappingURL=main.css.map */

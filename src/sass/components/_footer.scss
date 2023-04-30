@@ -23,6 +23,7 @@
     &:last-child{
         margin-right: 0;
     }
+
 }
 
 .footer-social__link{
@@ -32,7 +33,12 @@
 .footer-social__icon{
     width: 35px;
     height: 35px;
-    color: var(--white-text-color);
+    fill: var(--white-text-color);
+
+    &:hover, &:focus{
+        fill: var(--green-btn-color)
+    }
+    
 }
 
 .footer__copyright{
@@ -40,4 +46,8 @@
     text-align: center;
     margin: 0;
     padding: 0;
+
+    &:hover, &:focus{
+        text-decoration: underline var(--green-btn-color);
+    }
 }

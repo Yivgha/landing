@@ -25,24 +25,34 @@
 </head>
 
 <body>
-    <header>
+    <header id="header" class="header__container">
         <div class="container">
-            <div class="header__container">
-                <nav class="header__nav">
-                    <a class="logo" href="./index.html" lang="en">
-                        <img class="logo__img" src="./src/assets/images/logo.png" alt="logo image" />
-                        <p class="logo-green">Finance</p>
-                        <p class="logo-white">Ledger</p>
-                    </a>
-                    <ul class="header-nav__list">
-                        <li class="header-nav__item"><a href="#hero" clas="header-nav__link">Home</a></li>
-                        <li class="header-nav__item"><a href="#about" clas="header-nav__link">About</a></li>
-                        <li class="header-nav__item"><a href="#cases" clas="header-nav__link">Cases</a></li>
-                        <li class="header-nav__item"><a href="#blog" clas="header-nav__link">Blog</a></li>
-                        <li class="header-nav__item"><a href="#contact" clas="header-nav__link">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="header__nav">
+                <a class="logo" href="./index.html" lang="en">
+                    <img class="logo__img" src="./src/assets/images/logo.png" alt="logo image" />
+                    <p class="logo-green">Finance</p>
+                    <p class="logo-white">Ledger</p>
+                </a>
+                <ul class="header-nav__list">
+                    <li class="header-nav__item">
+                        <a href="#hero" clas="header-nav__link">
+                            <p class="header-nav-link__text">Home</p>
+                        </a>
+                    </li>
+                    <li class="header-nav__item"><a href="#about" clas="header-nav__link">
+                            <p class="header-nav-link__text">About</p>
+                        </a></li>
+                    <li class="header-nav__item"><a href="#cases" clas="header-nav__link">
+                            <p class="header-nav-link__text">Cases</p>
+                        </a></li>
+                    <li class="header-nav__item"><a href="#blog" clas="header-nav__link">
+                            <p class="header-nav-link__text">Blog</p>
+                        </a></li>
+                    <li class="header-nav__item"><a href="#contact" clas="header-nav__link">
+                            <p class="header-nav-link__text">Contact</p>
+                        </a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -116,27 +126,7 @@
                             <img alt="office buildings and the sky" src="./src/assets/images/cases/cases4.jpg"
                                 class="cases__img" />
                         </a>
-
-
-
-
-
-
-                        <!-- <a href="https://picsum.photos/id/1018/1000/600" data-lg-size="1000-600"
-                            data-lg-thumbnail="https://picsum.photos/id/1018/250/150">
-                            <img src="https://picsum.photos/id/1018/250/150">
-                        </a>
-                        <a href="https://picsum.photos/id/102/1000/600" data-lg-size="1000-600"
-                            data-lg-thumbnail="https://picsum.photos/id/102/250/150">
-                            <img src="https://picsum.photos/id/102/250/150">
-                        </a>
-                        <a href="https://picsum.photos/id/1005/1000/600" data-lg-size="1000-600"
-                            data-lg-thumbnail="https://picsum.photos/id/1005/250/150">
-                            <img src="https://picsum.photos/id/1005/250/150">
-                        </a> -->
                     </div>
-
-
                 </div>
             </div>
         </section>
@@ -281,7 +271,18 @@
             </div>
         </div>
     </footer>
-
+    <script>
+        window.onscroll = function () { myFunction() };
+        var stickyHeader = document.getElementById("header");
+        var addSticky = stickyHeader.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset > addSticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
     <script
