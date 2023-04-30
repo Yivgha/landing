@@ -1,4 +1,4 @@
-// import Notify from "notiflix";
+// import Notify from "notiflix";npm install --save-dev html-webpack-plugin
 
 const input = document.querySelector("#mail");
 
