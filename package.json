@@ -12,7 +12,7 @@
   },
   "scripts": {
     "dev": "parcel dev",
-    "build": "parcel build src/*.html",
+    "build": "parcel build",
     "start": "parcel src/*.html",
     "lint": "parcel lint"
   },
