@@ -7,6 +7,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "lightgallery": "^2.7.1",
+    "notiflix": "^3.2.6",
     "styled-components": "^5.3.10",
     "web-vitals": "^2.1.4"
   },
@@ -36,5 +37,10 @@
   },
   "devDependencies": {
     "webpack": "^5.81.0"
-  }
+  },
+  "description": "Best langing site ever - pretty and styled solution for your business!",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

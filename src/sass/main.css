@@ -13,6 +13,7 @@
   --contact-form-text-color: #808080;
   --contact-form-border-color: #F5F5F5;
   --footer-bg-color:#333333;
+  --warning-color: rgb(255, 160, 122);
 }
 
 * {
@@ -583,6 +584,15 @@ html {
 }
 .contact-form__input:last-child {
   margin-bottom: 24px;
+}
+
+.contact-form__input:optional {
+  border: 1px solid var(--contact-form-border-color);
+}
+
+.contact-form__input:focus:invalid {
+  background: url("../../src/assets/images/form/worning.svg") no-repeat 95% 50% var(--warning-color);
+  background-size: 28px;
 }
 
 .contact-form__btn {

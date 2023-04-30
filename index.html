@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-share.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-thumbnail.min.css">
 
+
+
     <link rel="stylesheet" href="./src/sass/main.css">
 </head>
 
@@ -321,8 +323,9 @@
                     <h2 class="contact-form__title">Request Callback</h2>
                     <div>
                         <form action="#" class="contact__form">
-                            <input placeholder="Enter your name" class="contact-form__input" />
-                            <input placeholder="Enter email*" class="contact-form__input" />
+                            <input type="text" placeholder="Enter your name" class="contact-form__input" />
+                            <input placeholder="Enter email*" class="contact-form__input" required aria-label="required"
+                                type="email" id="mail" name="mail" autocomplete="off" />
                             <button type="button" class="contact-form__btn">
                                 <p class="contact-form-btn__text">Send</p>
                             </button>
@@ -396,6 +399,8 @@
             plugins: [lgThumbnail, lgShare, lgRotate],
             download: true,
         })</script>
+    <!-- <script src="dist/notiflix-notify-aio-X.X.X.min.js"></script> -->
+    <script src="./src//js/validation.js"></script>
 
 </body>
 
