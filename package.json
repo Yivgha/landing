@@ -11,8 +11,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "dev": "parcel dev",
+    "build": "parcel build src/*.html",
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /landing/"
+    "lint": "parcel lint"
   },
   "eslintConfig": {
     "extends": [
@@ -33,7 +35,8 @@
     ]
   },
   "devDependencies": {
-    "parcel": "^2.8.3"
+    "parcel": "^2.8.3",
+    "parcel-reporter-clean-dist": "^1.0.4"
   },
   "description": "Best langing site ever - pretty and styled solution for your business!",
   "main": "index.js",
