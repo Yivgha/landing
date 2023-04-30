@@ -4,7 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 320px;
     height: 533px;
     display: flex;
     align-items: center;
@@ -28,7 +28,7 @@
     text-align: center;
 }
 .hero__btn{
-    width: 175px;
+width: 175px;
 height: 57px;
 border-radius: 5px;
 background: var( --green-btn-color);
@@ -54,4 +54,30 @@ border: transparent;
     height: 18px;
     margin-right: 8px;
     color: var(--white-text-color);
+}
+
+@media screen and (min-width: 768px){
+.hero__container{
+    height: 1024px;
+    width: 768px;
+}
+.hero__title{
+ @include font(55px, 1.36em, 600);
+}
+.hero__subtitle{
+   @include font(40px, 1.2em, 400);
+}
+}
+
+@media screen and (min-width: 1360px){
+    .hero__container{
+    height: 768px;
+    width: 1360px;
+    }
+    .hero__title{
+@include font(55px, 1.36em, 600);
+    }
+    .hero__subtitle{
+   @include font(40px, 1.35em, 400);
+}
 }

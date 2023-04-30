@@ -11,22 +11,23 @@ height:220px;
     background: var(--green-bg-color);
     color: var(--white-text-color);
    padding: 79px 0;
+   width: 320px;
 }
 
 .about__description {
-    @include font (16px, 1.37, 400);
+    @include font (16px, 1.37em, 400);
     color: var(--white-text-color);
     margin-bottom: 16px;
 }
 
 .about__title {
-    @include font (32px, 1.37, 400);
+    @include font (32px, 1.37em, 400);
     color: var(--white-text-color);
     margin-bottom: 24px;
 }
 
 .about__text{
-    @include font (16px, 1.37, 400);
+    @include font (16px, 1.37em, 400);
     color: var(--white-text-color);
     margin-bottom: 24px;
 }
@@ -48,9 +49,83 @@ display: flex;
     border: 1px solid var(--white-text-color);
      color: var(--green-bg-color);
  }
-
 }
 
 .about-btn__text{
-    @include font (16px, 1.37, 400);
+    @include font (16px, 1.37em, 400);
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        width: 100%;
+    }
+.about__img{
+width: 368px;
+height: 589px;
+}
+.about__container{
+    width: 400px;
+    height: 589px;
+     display: flex;
+     flex-wrap: wrap;
+     padding: 62px 0;
+}
+.about__wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.about__description {
+    @include font (18px, 1.38em, 400);
+}
+.about__title {
+    @include font (40px, 1.2em, 400);
+}
+.about__text{
+    @include font (18px, 1.38em, 400);
+}
+.about__btn{
+    width: 156px;
+height: 57px;
+}
+.about-btn__text{
+    @include font (18px, 1.38em, 400);
+}
+}
+
+@media screen and (min-width: 1360px){
+    .container{
+        width: 100%;
+    }
+.about__img{
+ width: 670px;
+height: 460px;
+}
+.about__container{
+    width: 690px;
+    display: flex;
+    height: 460px;
+    display: flex;
+     flex-wrap: wrap;
+     padding: 80px 0;
+}
+.about__wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.about__description {
+    @include font (18px, 1.38em, 400);
+}
+.about__title {
+    @include font (40px, 1.2em, 400);
+}
+.about__text{
+    @include font (18px, 1.38em, 400);
+}
+.about__btn{
+    width: 156px;
+height: 57px;
+}
+.about-btn__text{
+    @include font (18px, 1.38em, 400);
+}
 }

@@ -4,19 +4,19 @@
     justify-content: center;
 }
 .cases__description {
-    @include font (16px, 1.37, 400);
+    @include font (16px, 1.37em, 400);
     color: var(--black-text-color);
     margin-bottom: 16px;
 }
 
 .cases__title {
-    @include font (32px, 1.37, 400);
+    @include font (32px, 1.37em, 400);
     color: var(--black-text-color);
     margin-bottom: 24px;
 }
 
 .cases__text{
-    @include font (16px, 1.37, 400);
+    @include font (16px, 1.37em, 400);
     color: var(--black-text-color);
     margin-bottom: 31px;
 }
@@ -38,4 +38,66 @@
 .cases__img{
     width: 280px;
     height: 176px;
+}
+
+@media screen and (min-width: 768px){
+.cases__container{
+    padding: 48px 0 40px 0;
+}
+.cases__description {
+    @include font (18px, 1.38em, 400);
+}
+.cases__title{
+     @include font (40px, 1.35em, 400);
+}
+.cases__text{
+    @include font (18px, 1.38em, 400);
+    margin-bottom: 30px;
+}
+.cases__gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+ align-items: center;
+}
+.cases__item{
+    &:last-child{
+        margin-bottom: 8px;
+    }
+}
+.cases__img{
+   width: 223px;
+height: 148px;
+}
+}
+
+@media screen and (min-width: 1360px){
+    .cases__container{
+    padding: 80px 0 80px 0;
+}
+.cases__description {
+    @include font (18px, 1.83em, 400);
+    margin-bottom: 40px;
+}
+.cases__title{
+     @include font (40px, 1.2em, 400);
+     margin-bottom: 40px;
+}
+.cases__text{
+    @include font (18px, 1.38em, 400);
+    margin-bottom: 38px;
+}
+.cases__gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+ align-items: center;
+}
+.cases__item{
+    &:last-child{
+        margin-bottom: 8px;
+    }
+}
+.cases__img{
+   width: 425px;
+height: 285px;
+}
 }
