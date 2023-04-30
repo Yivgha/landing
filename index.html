@@ -29,7 +29,9 @@
         <div class="container">
             <nav class="header__nav">
                 <a class="logo" href="./index.html" lang="en">
-                    <img class="logo__img" src="./src/assets/images/logo.png" alt="logo image" />
+                    <svg class="logo__img">
+                        <use href="./src/assets/images/socials/socials.svg#icon-logo"></use>
+                    </svg>
                     <p class="logo-green">Finance</p>
                     <p class="logo-white">Ledger</p>
                 </a>
@@ -73,8 +75,10 @@
             </div>
         </section>
         <section id="about">
-            <img class="about__img" src="./src/assets/images/home/people.jpg" alt="people of our company" width="320px"
-                height="220px" />
+            <div class="about-img__box">
+                <img class="about__img" src="./src/assets/images/home/people.webp" alt="people of our company"
+                    width="320px" height="220px" />
+            </div>
             <div class="about__container">
                 <div class="container">
                     <p class="about__description">What you are looking for</p>
@@ -131,7 +135,9 @@
             </div>
         </section>
         <section id="blog">
-            <img src="./src/assets/images/home/blog.jpg" alt="cut of coffee between notebooks" class="blog__img" />
+            <div class="blog-img__box">
+                <img src="./src/assets/images/home/blog.webp" alt="cut of coffee between notebooks" class="blog__img" />
+            </div>
             <div class="blog__container">
                 <div class="container">
                     <p class="blog__description">April 16 2020</p>
@@ -217,7 +223,9 @@
         </section>
 
         <section id="contact">
-            <img src="./src/assets/images/home/contact.jpg" alt="man looking in laptop" class="contact__img" />
+            <div class="contact-img__box">
+                <img src="./src/assets/images/home/contact.jpg" alt="man looking in laptop" class="contact__img" />
+            </div>
             <div class="contact-form__box">
                 <div class="container">
                     <h2 class="contact-form__title">Request Callback</h2>
