@@ -1,5 +1,6 @@
 .blog-img__box{
     line-height: 0;
+    // width: 100%;
 }
 
 .blog__img{
@@ -11,7 +12,7 @@
     background-color: var(--blue-bg-color);
     color: var(--white-text-color);
     padding: 48px 0 58px 0;
-    width: 320px;
+    width: 100%;
 }
 
 .blog__description{
@@ -62,11 +63,12 @@ height: 493px;
 .blog__wrapper{
     display: flex;
     flex-direction: row-reverse;
+   width: 100%;
 }
 .blog__container{
-    width: 768px;
     display: flex;
      flex-wrap: wrap;
+     width: 100%;
      padding: 0;
      align-items: center;
 }
@@ -94,11 +96,12 @@ width: 670px;
 height: 460px;
     }
 .blog__wrapper{
+    width: 100%;;
     display: flex;
     flex-direction: row-reverse;
 }
 .blog__container{
-    width: 1360px;
+    width: 100%;
    display: flex;
      flex-wrap: wrap;
      padding: auto;

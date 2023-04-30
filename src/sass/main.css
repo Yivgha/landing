@@ -84,7 +84,7 @@ html {
   position: fixed;
   background-color: transparent;
   height: 120px;
-  width: 320px;
+  width: 100%;
   display: flex;
   align-items: center;
   z-index: 100;
@@ -145,7 +145,7 @@ html {
 @media screen and (min-width: 768px) {
   .header__container {
     height: 70px;
-    width: 768px;
+    width: 100%;
     justify-content: space-between;
   }
   .header__nav {
@@ -165,7 +165,7 @@ html {
 @media screen and (min-width: 1360px) {
   .header__container {
     height: 70px;
-    width: 1360px;
+    width: 100%;
     justify-content: space-between;
   }
   .header__nav {
@@ -255,7 +255,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 320px;
+  width: 100%;
   height: 533px;
   display: flex;
   align-items: center;
@@ -319,7 +319,7 @@ html {
 @media screen and (min-width: 768px) {
   .hero__container {
     height: 1024px;
-    width: 768px;
+    width: 100%;
   }
   .hero__title {
     font-size: 55px;
@@ -335,7 +335,7 @@ html {
 @media screen and (min-width: 1360px) {
   .hero__container {
     height: 768px;
-    width: 1360px;
+    width: 100%;
   }
   .hero__title {
     font-size: 55px;
@@ -361,7 +361,7 @@ html {
   background: var(--green-bg-color);
   color: var(--white-text-color);
   padding: 79px 0;
-  width: 320px;
+  width: 100%;
 }
 
 .about__description {
@@ -421,7 +421,7 @@ html {
     height: 589px;
   }
   .about__container {
-    width: 400px;
+    width: 100%;
     height: 589px;
     display: flex;
     flex-wrap: wrap;
@@ -465,7 +465,7 @@ html {
     height: 460px;
   }
   .about__container {
-    width: 690px;
+    width: 100%;
     display: flex;
     height: 460px;
     display: flex;
@@ -504,7 +504,6 @@ html {
 .cases__container {
   padding: 56px 0 40px 0;
   text-align: center;
-  justify-content: center;
 }
 
 .cases__description {
@@ -573,10 +572,15 @@ html {
   .cases__gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
+  }
+  .cases__item {
+    width: 223px;
+    height: 148px;
+    margin-right: 18px;
   }
   .cases__item:last-child {
-    margin-bottom: 8px;
+    margin-bottom: 0;
+    margin-right: 0;
   }
   .cases__img {
     width: 223px;
@@ -608,13 +612,17 @@ html {
   .cases__gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
   }
-  .cases__item:last-child {
-    margin-bottom: 8px;
+  .cases__item {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
   }
   .cases__img {
-    width: 425px;
+    width: 420px;
     height: 285px;
   }
 }
@@ -631,7 +639,7 @@ html {
   background-color: var(--blue-bg-color);
   color: var(--white-text-color);
   padding: 48px 0 58px 0;
-  width: 320px;
+  width: 100%;
 }
 
 .blog__description {
@@ -690,11 +698,12 @@ html {
   .blog__wrapper {
     display: flex;
     flex-direction: row-reverse;
+    width: 100%;
   }
   .blog__container {
-    width: 768px;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     padding: 0;
     align-items: center;
   }
@@ -729,11 +738,12 @@ html {
     height: 460px;
   }
   .blog__wrapper {
+    width: 100%;
     display: flex;
     flex-direction: row-reverse;
   }
   .blog__container {
-    width: 1360px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding: auto;
@@ -925,6 +935,7 @@ html {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: 100%;
   }
   .team__item {
     margin-right: 18px;
@@ -975,8 +986,7 @@ html {
   }
   .team__list {
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
   }
   .team__item {
     margin-right: 21px;
