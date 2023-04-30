@@ -36,7 +36,8 @@
   },
   "devDependencies": {
     "parcel": "^2.8.3",
-    "parcel-reporter-clean-dist": "^1.0.4"
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
   },
   "description": "Best langing site ever - pretty and styled solution for your business!",
   "main": "index.js",
