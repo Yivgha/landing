@@ -3,6 +3,7 @@
   --black-text-color: #333333;
   --hero-bg-mask-color: rgba(0, 0, 0, 0.4);
   --overlay-mask-color: rgba(0, 0, 0, 0.6);
+  --white-overlay-color: rgba(225, 225, 225, 0.4);
   --green-text-color: #28A745;
   --green-btn-color: #28A745;
   --light-green-btn-color: #2EBF4F;
@@ -44,20 +45,6 @@ ul, ol, a {
 html {
   overflow: scroll;
   overflow-x: hidden;
-}
-
-.visually__hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  border: 0;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  margin: -1px;
 }
 
 .container {
@@ -544,14 +531,30 @@ html {
   margin-bottom: 8px;
   text-decoration: none;
   list-style: none;
+  position: relative;
+  overflow: hidden;
 }
 .cases__item:last-child {
   margin-bottom: 0;
 }
 
+.cases__item:hover .cases__overlay, .cases__item:focus .cases__overlay {
+  transform: translateY(0);
+}
+
 .cases__img {
   width: 280px;
   height: 176px;
+}
+
+.cases__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--white-overlay-color);
+  transform: translateY(100%);
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -1043,6 +1046,7 @@ html {
 .contact__form {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .contact-form__input {
@@ -1060,16 +1064,9 @@ html {
   margin-bottom: 24px;
 }
 
-.contact-form__input:optional {
-  border: 1px solid var(--contact-form-border-color);
-}
-
 .contact-form__input:focus:invalid {
   background: url("../../src/assets/images/form/worning.svg") no-repeat 95% 50% var(--warning-color);
   background-size: 28px;
-}
-.contact-form__input:focus:invalid .contacts__warning {
-  display: block;
 }
 
 .contact-form__btn {

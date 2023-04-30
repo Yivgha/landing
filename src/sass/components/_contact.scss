@@ -20,6 +20,7 @@
 .contact__form{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .contact-form__input{
@@ -38,17 +39,10 @@ border-radius: 5px;
     }
 }
 
-.contact-form__input:optional{
- border: 1px solid var(--contact-form-border-color);
-}
 
 .contact-form__input:focus:invalid{
 background: url("../../src/assets/images/form/worning.svg") no-repeat 95% 50% var( --warning-color);
 background-size: 28px;
-
-.contacts__warning{
-    display: block;
-}
 }
 
 .contact-form__btn{

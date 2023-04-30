@@ -120,6 +120,7 @@
                                     src="./src/assets/images/cases/cases1.webp" alt="people around the table"
                                     loading="lazy" decoding="async">
                             </picture>
+                            <div class="cases__overlay"></div>
                         </a>
 
                         <a class="cases__item" href="./src/assets/images/cases/cases3.webp">
@@ -131,6 +132,7 @@
                                     src="./src/assets/images/cases/cases3.webp"
                                     alt="graphics in notebook and hand with pen" loading="lazy" decoding="async">
                             </picture>
+                            <div class="cases__overlay"></div>
                         </a>
 
                         <a class="cases__item" href="./src/assets/images/cases/cases5.webp">
@@ -142,6 +144,7 @@
                                     src="./src/assets/images/cases/cases5.webp" alt="man shaking hands with a woman"
                                     loading="lazy" decoding="async">
                             </picture>
+                            <div class="cases__overlay"></div>
                         </a>
 
                         <a class="cases__item" href="./src/assets/images/cases/cases7.webp">
@@ -153,6 +156,7 @@
                                     src="./src/assets/images/cases/cases7.webp"
                                     alt="people shaking hands above the table" loading="lazy" decoding="async">
                             </picture>
+                            <div class="cases__overlay"></div>
                         </a>
 
                         <a class="cases__item" href="./src/assets/images/cases/cases2.webp">
@@ -164,6 +168,7 @@
                                     src="./src/assets/images/cases/cases2.webp" alt="womans hands on the laptop"
                                     loading="lazy" decoding="async">
                             </picture>
+                            <div class="cases__overlay"></div>
                         </a>
                         <a class="cases__item" href="./src/assets/images/cases/cases4.webp">
                             <picture>
@@ -174,6 +179,7 @@
                                     src="./src/assets/images/cases/cases4.webp" alt="office buildings and the sky"
                                     loading="lazy" decoding="async">
                             </picture>
+                            <div class="cases__overlay"></div>
                         </a>
                     </div>
                 </div>
@@ -380,13 +386,15 @@
                 <div class="container">
                     <h2 class="contact-form__title">Request Callback</h2>
                     <div>
-                        <form action="" name="contact-form" class="contact__form" netlify netlify-honeypot="bot-field">
-                            <input type="text" placeholder="Enter your name" name="name" class="contact-form__input" />
+                        <form action="" name="contact-form" class="contact__form" netlify netlify-honeypot="bot-field"
+                            id="contact-form">
+                            <input type="text" placeholder="Enter your name" name="name" class="contact-form__input"
+                                id="name" autocomplete="off" />
+
                             <input placeholder="Enter email*" class="contact-form__input" required aria-label="required"
                                 type="email" id="mail" name="email" autocomplete="off"
-                                title="This is a required field" />
-                            <p id="warning" class="contacts__warning"></p>
-                            <button type="button" class="contact-form__btn">
+                                pattern="[^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$+" />
+                            <button type="submit" class="contact-form__btn" id="send">
                                 <p class="contact-form-btn__text">Send</p>
                             </button>
                         </form>
