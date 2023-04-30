@@ -11,8 +11,8 @@
   },
   "scripts": {
     "dev": "parcel dev",
-    "build": "parcel build src/*.html",
-    "start": "parcel src/*.html",
+    "build": "parcel build ./index.html",
+    "start": "parcel ./index.html",
     "lint": "parcel lint"
   },
   "eslintConfig": {
@@ -39,7 +39,6 @@
     "posthtml-include": "^1.7.4"
   },
   "description": "Best langing site ever - pretty and styled solution for your business!",
-  "main": "index.js",
   "keywords": [],
   "author": "",
   "license": "ISC"
