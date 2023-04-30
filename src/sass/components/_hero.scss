@@ -39,6 +39,10 @@ display: flex;
 cursor: pointer;
 outline: none;
 border: transparent;
+
+&:hover, &:focus{
+    background-color: var(--light-green-btn-color);
+}
 }
 
 .hero-btn__text{
