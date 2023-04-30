@@ -11,6 +11,7 @@
 .contact-form__title{
     @include font(32px, 1.5, 400);
     color: var( --black-text-color);
+    margin-top: 0;
     margin-bottom: 69px;
 }
 .contact__form{
