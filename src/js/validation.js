@@ -21,7 +21,9 @@ let engine = (id, serial, message) => {
   } else {
     errorMsg[serial].innerHTML = "";
       id.style.border = "transparent";
-    }
-    var allInputs = document.querySelectorAll('input');
+      var allInputs = document.querySelectorAll('input');
     allInputs.forEach(singleInput => singleInput.value = '');
+    alert("Your info was send!");
+    }
+    
 }
