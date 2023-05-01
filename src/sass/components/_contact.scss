@@ -20,7 +20,6 @@
 .contact__form{
     display: flex;
     flex-direction: column;
-    position: relative;
 }
 
 .contact-form__input{
@@ -41,7 +40,7 @@ border-radius: 5px;
 
 
 .contact-form__input:focus:invalid{
-background: url("../../src/assets/images/form/worning.svg") no-repeat 95% 50% var( --warning-color);
+background: url("../../src/assets/images/form/worning.svg") no-repeat ;
 background-size: 28px;
 }
 
@@ -66,9 +65,12 @@ display: flex;
     color: var(--white-text-color);
 }
 
-.contacts__warning{
-    display: none;
+.form__error {
+  color: red;
+  margin-bottom: 5px;
+  text-decoration: red;
 }
+
 
 @media screen and (min-width: 768px){
 .contact__wrapper{

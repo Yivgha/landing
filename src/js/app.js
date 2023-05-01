@@ -14,15 +14,3 @@ window.onscroll = function () { myFunction() };
                 header.classList.remove("sticky");
             }
 }
-        
-
-const btn = document.getElementById("send");
-
-btn.addEventListener('click', function handleClick(event) {
-  event.preventDefault();
-  const inputs = document.querySelectorAll('#name, #mail');
-
-  inputs.forEach(input => {
-    input.value = '';
-  });
-});

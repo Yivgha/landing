@@ -385,20 +385,19 @@
             <div class="contact-form__box">
                 <div class="container">
                     <h2 class="contact-form__title">Request Callback</h2>
-                    <div>
-                        <form action="" name="contact-form" class="contact__form" netlify netlify-honeypot="bot-field"
-                            id="contact-form">
-                            <input type="text" placeholder="Enter your name" name="name" class="contact-form__input"
-                                id="name" autocomplete="off" />
 
-                            <input placeholder="Enter email*" class="contact-form__input" required aria-label="required"
-                                type="email" id="mail" name="email" autocomplete="off"
-                                pattern="[^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$+" />
-                            <button type="submit" class="contact-form__btn" id="send">
-                                <p class="contact-form-btn__text">Send</p>
-                            </button>
-                        </form>
-                    </div>
+                    <form id="form" action="" class="contact__form" netlify netlify-honeypot="bot-field">
+                        <input type="text" placeholder="Enter your name" name="name" class="contact-form__input"
+                            id="name" autocomplete="off" />
+                        <input type="email" id="email" name="email" placeholder="Enter email*" aria-label="required"
+                            autocomplete="off" class="contact-form__input" />
+                        <div class="form__error"></div>
+                        <button type="submit" class="contact-form__btn" id="send">
+                            <p class="contact-form-btn__text">Send
+                            </p>
+                        </button>
+                    </form>
+
                 </div>
             </div>
         </section>
@@ -451,7 +450,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/zoom/lg-zoom.min.js"></script>
 
     <script type="module" src="./src/js/app.js"></script>
-    <script src="./index.js"></script>
     <script src="./src/js/validation.js"></script>
 
 </body>

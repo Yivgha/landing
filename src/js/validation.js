@@ -1,33 +1,27 @@
+let id = (id) => document.getElementById(id);
+let classes = (classes) => document.getElementsByClassName(classes);
 
-// const input = document.querySelector("#mail");
-// input.setCustomValidity("This is a required field");
-// console.log("This field is required");
-//    input.reportValidity();
+let email = id("email"),
+    name = id("name"),
+    form = id("form"),
+    errorMsg = classes("form__error"),
+    sendBtn = id("send");
 
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        engine(email, 0, "This field is required");
+        
+    });
 
-(function() {
-	
-	const input = document.getElementById('mail');
-	const	form = document.getElementById('contact-form');
-	const	elem = document.createElement('div');
-			elem.id = 'notify';
-			elem.style.display = 'none';
-			form.appendChild(elem);
+let engine = (id, serial, message) => {
 
-	input.addEventListener('invalid', function(event){
-		event.preventDefault();
-		if ( ! event.target.validity.valid ) {
-			elem.textContent   = 'This is a required field';
-			elem.className     = 'error';
-			elem.style.display = 'block';
-		}
-	});
-
-	input.addEventListener('input', function(event){
-		if ( 'block' === elem.style.display ) {
-			input.className = '';
-			elem.style.display = 'none';
-		}
-	});
-
-})();
+  if (id.value.trim() === "") {
+      errorMsg[serial].innerHTML = message;
+      id.style.border = "2px solid red";
+  } else {
+    errorMsg[serial].innerHTML = "";
+      id.style.border = "transparent";
+    }
+    var allInputs = document.querySelectorAll('input');
+    allInputs.forEach(singleInput => singleInput.value = '');
+}
